@@ -16,7 +16,9 @@ const corsOptions = {
 }
 app.use(cors(corsOptions));
 
-
+app.get("/", (req,res)=>{
+    res.send("Welcome to InfoShare Backend");
+})
 
 
 app.use(DataRouter);
