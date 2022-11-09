@@ -10,7 +10,8 @@ app.use(bodyParser.json());
 
 // CORS ISSUE ---------------------
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://infoshare.netlify.app',
+    // origin: 'http://localhost:3000',
     credentials: true,            //access-control-allow-credentials:true
     optionSuccessStatus: 200
 }
