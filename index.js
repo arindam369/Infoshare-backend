@@ -21,7 +21,7 @@ app.use(cors(corsOptions));
 
 app.use(DataRouter);
 
-const PORT = 5000;
-app.listen(PORT, ()=>{
-    console.log("Server is listening on port:", PORT);
+const port = 5000 || process.env.PORT;
+app.listen(port, ()=>{
+    console.log("Server is listening on port:", port);
 })
